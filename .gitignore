@@ -4,6 +4,8 @@ data/
 .env
 *.db
 .DS_Store
+.kiro/
+.vscode/
 pinelab_creds.json
 pinelab_hack_credentials.csv
 *_credentials.*
