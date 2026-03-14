@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/app.js",
+    "start": "node src/app.js",
+    "migrate": "knex migrate:latest --knexfile src/knexfile.js",
+    "migrate:rollback": "knex migrate:rollback --knexfile src/knexfile.js",
+    "seed": "node src/seed/seedDatabase.js",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.1009.0",
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "knex": "^3.1.0"
+  },
+  "devDependencies": {
+    "fast-check": "^3.23.2",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/
+.env
+*.db
+.DS_Store
+pinelab_creds.json
+pinelab_hack_credentials.csv
+*_credentials.*
+*_creds.*
+bedrock.yaml
